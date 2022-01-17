@@ -1,0 +1,8 @@
+
+CREATE TABLE users
+( id INT(11) PRIMARY KEY AUTO_INCREMENT,
+  username VARCHAR(100) NOT NULL,
+  password VARCHAR(100) NOT NULL,
+  name VARCHAR(100) NOT NULL,
+  CONSTRAINT users_unique UNIQUE (username)
+);
